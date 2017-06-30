@@ -13,9 +13,17 @@ def bubble(List):
     l2 = l
 
     for count in range(l):
+        print (l,l2)
         for index in range(l2):
-            temp = List[index]
-            ((List[index] = List[index+1]) and (List[index+1] = temp)) if List[index] > List[index+1] else pass
+            print (l,l2,index)
+            if index == l2-1:
+                pass
+            else:
+                temp = List[index]
+                if List[index] > List[index + 1]:
+                    print (l,l2,index)
+                    List[index] = List[index+1]
+                    List[index+1] = temp
         l2 = l2-1
 
 
