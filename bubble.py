@@ -7,7 +7,9 @@
 
 '''
 
-List = [1,2,3,4,5]
+import sys
+
+List = [5,6,1,3,8,7,5]
 def bubble(List):
     l = len(List)
     l2 = l
